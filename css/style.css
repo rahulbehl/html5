@@ -1,0 +1,511 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9 Jul, 2015, 5:55:18 PM
+    Author     : Rahul
+*/
+
+html,body{
+    height: 100%;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+    overflow-x:hidden;
+}
+h2 {
+    font: 700 3em/1em 'Amatic SC', sans-serif;
+    margin: 0.7em 0; }
+h3 {
+    font: 700 2em/1em 'Amatic SC', sans-serif;
+    margin: 0.7em 0; }
+h1,h2,h3,h4,h5,h5{    
+    font-family: 'Amatic SC', cursive;
+    color:#7F1D78;
+}
+p,input,.chosen-container{
+    font:600 1.5em/1.4em 'Josefin Sans', sans-serif;
+}
+.img-inline{
+    display: inline-block
+}
+
+.m-t-sm{
+    margin-top: 20px;
+}
+.m-t-md{
+    margin-top: 35px;
+}
+.m-t-lg{
+    margin-top: 75px;
+}
+.box{
+    margin: 20px 0 40px 0;
+}
+section{
+    position: relative;
+}
+section:nth-child(2n+2){
+    background-color: #fff;
+}
+.sec-1{
+    z-index: 9
+}
+.sec-2{
+    z-index: 8
+}
+.sec-3{
+    z-index: 7
+}
+.sec-4{
+    z-index: 6
+}
+.sec-5{
+    z-index: 5
+}
+.sec-6{
+    z-index: 4
+}
+.sec-7{
+    z-index: 3
+}
+.sec-8{
+    z-index: 2
+}
+.sec-9{
+    z-index: 1
+}
+
+
+.padding-0{
+    padding: 0
+}
+
+.lipsum-circle{
+    position: absolute;
+    left: 45%;
+    width: 9%;
+    min-width: 50px;
+    z-index: 1;
+    margin-top: -200px;
+} 
+.lipsum-circle-rotate{
+    position: absolute;
+    left: 54%;
+    top: 2%;
+    width: 7%;
+    min-width: 45px;
+    -webkit-transform:  scale(0);
+    -moz-transform:  scale(0);
+    -webkit-transform:  scale(0);;
+    -moz-transform:     scale(0);;
+    -ms-transform:      scale(0);;
+    -o-transform:       scale(0);;
+    transform:    scale(0);
+    z-index: 1;
+}
+@media (max-width:767px)
+{
+    .lipsum-circle{
+        width: 40px;
+        margin-left: -5px;
+    }
+    .lipsum-circle-rotate{
+        width: 65px;
+        margin-left: -2.5%;
+    }
+}
+@media (max-width:420px)
+{
+    .lipsum-circle-rotate{
+        margin-left: 0.5%;
+    }
+}
+.part-title h2{
+    margin-top: 0px;
+}
+.part-title{
+    margin: 0 0 20px 0;
+}
+.part-title h3{
+    margin-bottom: 0px;
+}
+
+/*******Navbar**********-*/
+.nav li a{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color:#7F1D78 !important;
+    font-size: 24px;
+}
+.navbar-default{
+    background-color: transparent;
+    border: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+
+/*******Loader**********-*/
+.loader{
+    position: fixed;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.loader img{
+    margin-top: 2%;
+}
+
+/********TitleImage***********/
+#title-image{
+    display: block;
+    overflow: hidden;
+    position:relative;
+    height: 100%;
+    width: 100%;
+    background: url("../img/karen-michael.svg") center bottom no-repeat;
+    background-size: contain;
+    z-index: 10;
+    background-color: #fff;
+}
+
+/*******Part 1**********-*/
+
+.sec-1 .img-title{
+    z-index: 1;
+    position: relative;
+}
+.part1down .img-1{
+    height: 300px
+}
+.part1down .img-1 img{
+    height: 100%;
+    margin-top: -400px;
+    z-index: 0;
+    position: relative;
+}
+.yes-finally{
+    width: 270px;
+    margin: 0 auto;
+}
+.part1down .img-2{
+    float: left;
+    position:relative;
+    margin: 0px 0 0 -13px;
+    width: 45px;
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform:scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
+}
+.part1down .img-3{
+    float: left;
+    position: relative;
+    left:220px;
+    margin: -5px 0 0 -59px;
+    width: 60px;
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0); /* Standard syntax */
+}
+
+/*******Part 2**********-*/
+.part2down .icon{
+    width: 100px;
+}
+.sec-1 .content{
+    opacity: 0;
+}
+/*******Part 3**********-*/
+.loren1{
+    position: absolute;
+    left: 3%;
+    top: 35%;
+    width: 8%;
+    opacity: 0;
+}
+.loren2{
+    transform: rotate(70deg);
+    position: absolute;
+    left: 90%;
+    top: 41%;
+    width: 6%;
+    opacity: 0;
+}
+.array1{
+    position: absolute;
+    opacity: 0;
+    top: 10%;
+    left: 10%;
+    width: 13%;
+}
+.array2{
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    opacity: 0;
+    width: 15%;
+}
+.array3{
+    position: absolute;
+    opacity: 0;
+    top: 100%;
+    left: 47%;
+    width: 6%;
+}
+
+/*******Part 4**********-*/
+
+.part4down h2.media-heading{
+    font-size: 24px;
+}
+.part4down .media-body{
+    font-size: 13px;
+}
+/*******Part 5**********-*/
+.globe-lights{
+    position: absolute;
+    margin-top: -29%;
+    margin-left: -2%;
+    width: 100%;
+}
+
+/*******Part 7**********-*/
+.sec-8 .lipsum-circle-rotate{
+
+    margin-top: 3px;
+}
+.part7down{
+    background-color: #F6EFEB;
+    padding-top: 60px;
+}
+@media (min-width:768px){
+    .part7down{
+        padding-top: 110px;
+    }
+}
+
+.part7down .contact-icon{
+    width: 40px;
+}
+.lipsum-circle-box{
+    position: absolute;
+    left: 47%;
+}
+.sec-8 .chosen-container-single .chosen-single{
+    height: 41px;
+    line-height: 41px;
+    background-image: linear-gradient(#FFF 20%,#fff 80%);
+    border: 0
+}
+
+
+/* @buttons 
+****************************************************- */
+.form-styled .button {
+    border: 0;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color: #243140;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    -webkit-user-drag: none;
+    font: 700 2em/1em 'Amatic SC', sans-serif !important; }
+.form-styled .button:focus{
+    outline: none;
+}
+@media (min-width:768px){
+    .form-styled .button{
+        height: 70px;
+        width:70px;
+    }
+}
+@media (min-width:992px){
+    .form-styled .button{
+        height: 80px;
+        width:80px;
+    }
+}
+@media (min-width:1200px){
+    .form-styled .button{
+        height: 110px;
+        width: 110px;
+    }
+}
+
+/* @primary button theme
+******************************************** */
+.form-styled .btn-primary {
+    background-color: #BF50B6; 
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-styled .btn-primary:hover, .form-styled .btn-primary:focus {
+    background-color: #ff46af;
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);;
+    -moz-transform:    rotate(360deg) scale(1.2);;
+    -ms-transform:     rotate(360deg) scale(1.2);;
+    -o-transform:      rotate(360deg) scale(1.2);;
+    transform:   rotate(360deg) scale(1.2);
+}
+
+.form-styled .btn-primary:active {
+    background-color: #16a085; }
+
+.form-styled .btn-primary, .form-styled .btn-primary:hover, .form-styled .btn-primary:focus, .form-styled .btn-primary:active {
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.08); }
+
+
+/* @Form input theme
+******************************************** */
+.form-styled .input{
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;    
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+.form-styled .input:focus,.form-styled .chosen-container-active .chosen-single{
+    outline: none;
+    border: 1px solid #7F1D78;
+}
+.form-styled select{
+/*    opacity: 0;
+    display: inline-block !important;
+    position: absolute;*/
+    font:600 1.5em/1.4em 'Josefin Sans', sans-serif;
+}
+.form-styled #guest_no-error{
+    position: absolute;
+    margin-top: 52px;
+}
+
+
+
+/***********Map and Footer***************/
+#map-wrap {
+    height: 500px;
+    width: 100%;
+}
+#map-wrap p{
+    color: #7F1D78;
+}
+.footer{
+    color: #fff;
+    background-color: #7F1D78;
+}
+.footer > .glyphicon{
+    line-height: 50px;
+    font-size: 22px;
+}
+.toTop{
+    cursor: pointer;
+}
+
+
+/********* Preloader******/
+
+body {
+    display: none; }
+
+#jpreOverlay, #qLoverlay {
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11; }
+
+#jpreSlide {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: center;
+    width: 100%; }
+
+#jpreLoader{ 
+    top:46% !important;
+}
+#jpreLoader, #qLloader {
+    width: 100px;
+    height: 100px;
+    background: url('../img/preload_pre.png') 0 100% no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 0; }
+
+#jpreBar, #qLbar {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    background: url('../img/preload.png') 0% no-repeat;
+    background-size: cover; }
+
+#jprePercentage, #qLpercentage {
+    font: 700 3em/1em 'Amatic SC', sans-serif !important;
+    color: #7e1d79;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    height: 30px;
+    width: 100px;
+    margin: -50px 0 0 -40px; }
+
+
+/* @alerts errors
+-------------------------------------------- */
+.form-styled .notification .close-btn:hover {
+    opacity: 1; }
+
+.form-styled .alert-info {
+    color: #163161;
+    background-color: #cfe6fc; }
+
+.form-styled .alert-success {
+    color: #336633;
+    background-color: #d2f7ad; }
+
+.form-styled .alert-warning {
+    color: #FFF;
+    background-color: #7F1D78; }
+
+.form-styled .alert-error {
+    color: #FFF;
+    background-color: #7F1D78; }
+
+.form-styled .notification .close-btn:hover, .form-styled .alert-info, .form-styled .alert-success, .form-styled .alert-warning, .form-styled .alert-error {
+    font: 700 1.4em/1em 'Josefin Sans', sans-serif !important;
+    padding: 10px 5px; }
+
+label.error {
+    font: 700 1.2em/1em 'Josefin Sans', sans-serif !important;
+    display: block;
+    width: 100%;
+    color: #7F1D78; }
+
+select#sendersubject.error {
+    margin-bottom: 10px; }
